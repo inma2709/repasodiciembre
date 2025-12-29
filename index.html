@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recursos de Repaso · JS, React, Git y WordPress</title>
+  <title>Recursos de Repaso · HTML, CSS, JS, React, Git, WordPress y Backend</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
@@ -14,17 +14,27 @@
        BARRA DE NAVEGACIÓN
   ========================== -->
   <header class="top-nav">
-    <h1>📚 Recursos de Repaso</h1>
-    <nav>
-      <a href="#html-css">HTML & CSS</a>
-      <a href="#javascript">JavaScript</a>
-      <a href="#react">React</a>
-      <a href="#git">Git & GitHub</a>
-      <a href="#wordpress">WordPress</a>
-      <a href="#backend">Backend</a>
-      <a href="#canales">Canales</a>
-      <a href="#conclusion">Conclusión</a>
-    </nav>
+    <div class="nav-inner">
+      <h1>📚 Recursos de Repaso</h1>
+
+      <nav aria-label="Navegación principal">
+        <a href="#html-css">HTML & CSS</a>
+        <a href="#manuales-html-css">Manuales HTML/CSS</a>
+
+        <a href="#javascript">JavaScript</a>
+        <a href="#manuales-js">Manuales JS</a>
+
+        <a href="#react">React</a>
+        <a href="#manuales-react">Manuales React</a>
+
+        <a href="#git">Git & GitHub</a>
+        <a href="#wordpress">WordPress</a>
+
+        <a href="#backend">Backend</a>
+        <a href="#canales">Canales</a>
+        <a href="#conclusion">Conclusión</a>
+      </nav>
+    </div>
   </header>
 
   <!-- =========================
@@ -32,14 +42,12 @@
   ========================== -->
   <section class="intro">
     <p>
-      Esta página recopila cursos gratuitos y de calidad para
-      <strong>repasar JavaScript</strong>, aprender o afianzar
-      <strong>React</strong>, dominar <strong>Git y GitHub</strong>
-      y formarte en <strong>WordPress</strong>.
+      Esta página recopila cursos y recursos para <strong>repasar y aprender</strong>:
+      HTML, CSS, JavaScript, React, Git/GitHub, WordPress y Backend.
     </p>
     <p>
-      Usa esto como <strong>manual de repaso</strong>: elige un recurso, toma apuntes
-      y aplica lo aprendido en un mini-ejercicio. Lo ideal es combinar 2–3 cursos
+      Úsala como <strong>manual de repaso</strong>: elige un recurso, toma apuntes y
+      aplica lo aprendido en un mini-ejercicio. Lo ideal es combinar 2–3 cursos
       y repetir conceptos.
     </p>
   </section>
@@ -47,187 +55,127 @@
   <main>
 
     <!-- =========================
-     HTML Y CSS
-========================== -->
-<section id="html-css" class="section">
-  <h2>🎨 HTML & CSS</h2>
+         HTML Y CSS
+    ========================== -->
+    <section id="html-css" class="section">
+      <h2>🎨 HTML & CSS</h2>
 
-  <div class="grid">
+      <div class="grid">
 
-    <!-- HTML desde cero (YouTube) -->
-    <article class="card">
-      <img
-        src="https://img.youtube.com/vi/3nYLTiY5skU/hqdefault.jpg"
-        alt="Curso HTML desde cero en YouTube"
-      >
-      <h3>HTML desde cero (YouTube)</h3>
-      <p>
-        Curso introductorio para aprender HTML desde cero:
-        estructura básica, etiquetas, semántica y buenas prácticas
-        para crear páginas web correctamente.
+        <article class="card">
+          <img src="https://img.youtube.com/vi/3nYLTiY5skU/hqdefault.jpg" alt="Curso HTML desde cero en YouTube">
+          <h3>HTML desde cero (YouTube)</h3>
+          <p>
+            Curso introductorio para aprender HTML: estructura, etiquetas, semántica
+            y buenas prácticas para crear páginas web correctamente.
+          </p>
+          <a href="https://www.youtube.com/watch?v=3nYLTiY5skU" target="_blank" rel="noopener noreferrer">
+            Ver curso en YouTube
+          </a>
+        </article>
+
+        <article class="card">
+          <img src="https://img.youtube.com/vi/CGV9CuIUtwk/hqdefault.jpg" alt="Curso CSS desde cero en YouTube">
+          <h3>CSS desde cero (YouTube)</h3>
+          <p>
+            Curso para aprender CSS: colores, tipografías, caja, layout y primeros pasos
+            para dar estilo a tus páginas web.
+          </p>
+          <a href="https://www.youtube.com/watch?v=CGV9CuIUtwk" target="_blank" rel="noopener noreferrer">
+            Ver curso en YouTube
+          </a>
+        </article>
+
+        <article class="card">
+          <img src="https://img.youtube.com/vi/1Rs2ND1ryYc/hqdefault.jpg" alt="Lenguaje CSS - documentación y tutoriales">
+          <h3>LenguajeCSS.com</h3>
+          <p>
+            Web de referencia para aprender y consultar CSS de forma clara y estructurada.
+            Ideal como documentación, repaso rápido y profundización.
+          </p>
+          <a href="https://lenguajecss.com/" target="_blank" rel="noopener noreferrer">
+            Visitar web
+          </a>
+        </article>
+
+        <article class="card">
+          <img src="https://img.youtube.com/vi/qz0aGYrrlhU/hqdefault.jpg" alt="Lenguaje HTML - documentación y tutoriales">
+          <h3>LenguajeHTML.com</h3>
+          <p>
+            Web de referencia para aprender HTML de forma clara y estructurada.
+            Ideal como documentación, consulta rápida y repaso.
+          </p>
+          <a href="https://lenguajehtml.com/" target="_blank" rel="noopener noreferrer">
+            Visitar web
+          </a>
+        </article>
+
+        <article class="card">
+          <img src="pildoras.png" alt="Píldoras Informáticas · HTML5">
+          <h3>HTML5 desde cero (Píldoras Informáticas)</h3>
+          <p>
+            Curso completo de HTML5 explicado paso a paso. Recomendable para entender
+            semántica, formularios y estructura profesional.
+          </p>
+          <a href="https://www.pildorasinformaticas.es/course/html-5/" target="_blank" rel="noopener noreferrer">
+            Ver curso
+          </a>
+        </article>
+
+        <article class="card">
+          <img src="pildoras.png" alt="Píldoras Informáticas · CSS Avanzado">
+          <h3>CSS avanzado desde 0 (Píldoras Informáticas)</h3>
+          <p>
+            Curso para profundizar en CSS: layouts avanzados, responsive design y
+            buenas prácticas profesionales.
+          </p>
+          <a href="https://www.pildorasinformaticas.es/course/css-avanzado-desde-0/" target="_blank" rel="noopener noreferrer">
+            Ver curso
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         MANUALES PROPIOS · HTML & CSS
+    ========================== -->
+    <section id="manuales-html-css" class="section">
+      <h2>📘 Manuales propios · HTML & CSS</h2>
+
+      <p class="section-lead">
+        Materiales didácticos propios trabajados en clase: paso a paso,
+        con ejemplos y estructura alineada con el curso.
       </p>
-      <a
-        href="https://www.youtube.com/watch?v=3nYLTiY5skU"
-        target="_blank"
-      >
-        Ver curso en YouTube
-      </a>
-    </article>
 
-    <!-- CSS desde cero (YouTube) -->
-    <article class="card">
-      <img
-        src="https://img.youtube.com/vi/CGV9CuIUtwk/hqdefault.jpg"
-        alt="Curso CSS desde cero en YouTube"
-      >
-      <h3>CSS desde cero (YouTube)</h3>
-      <p>
-        Curso para aprender CSS desde cero: colores, tipografías,
-        cajas, layout y primeros pasos para dar estilo a tus páginas web.
-      </p>
-      <a
-        href="https://www.youtube.com/watch?v=CGV9CuIUtwk"
-        target="_blank"
-      >
-        Ver curso en YouTube
-      </a>
-    </article>
-    <article class="card">
-  <img
-    src="https://img.youtube.com/vi/1Rs2ND1ryYc/hqdefault.jpg"
-    alt="Lenguaje CSS - documentación y tutoriales"
-  >
-  <h3>LenguajeCSS.com</h3>
-  <p>
-    Web de referencia para aprender y consultar CSS de forma clara y estructurada.
-    Ideal como documentación, repaso rápido y profundización en propiedades,
-    layouts y buenas prácticas.
-  </p>
-  <a
-    href="https://lenguajecss.com/"
-    target="_blank"
-  >
-    Visitar web
-  </a>
-</article>
+      <div class="grid">
 
+        <article class="card">
+          <span class="manual-badge">Manual del curso</span>
+          <h3>Manual HTML · UF1841</h3>
+          <p>
+            Manual completo: estructura, semántica, formularios, tablas,
+            buenas prácticas y ejemplos claros.
+          </p>
+          <a href="https://cursohtml1841.vercel.app/" target="_blank" rel="noopener noreferrer">
+            Ver manual
+          </a>
+        </article>
 
-    <!-- Lenguaje HTML -->
-    <article class="card">
-      <img
-        src="https://img.youtube.com/vi/qz0aGYrrlhU/hqdefault.jpg"
-        alt="Lenguaje HTML - documentación y tutoriales"
-      >
-      <h3>LenguajeHTML.com</h3>
-      <p>
-        Web de referencia para aprender HTML de forma clara y estructurada.
-        Ideal como documentación, consulta rápida y repaso de conceptos.
-      </p>
-      <a
-        href="https://lenguajehtml.com/"
-        target="_blank"
-      >
-        Visitar web
-      </a>
-    </article>
+        <article class="card">
+          <span class="manual-badge">Manual del curso</span>
+          <h3>Manual CSS · Bootstrap y Animaciones</h3>
+          <p>
+            Manual práctico de estilos, Bootstrap y animaciones: maquetación moderna,
+            responsive y mejora visual.
+          </p>
+          <a href="https://vercel.com/ici2709s-projects/bootstrapyanimaciones" target="_blank" rel="noopener noreferrer">
+            Ver manual
+          </a>
+        </article>
 
-    <!-- Píldoras Informáticas · HTML5 -->
-    <article class="card">
-      <img src="pildoras.png" alt="Píldoras Informáticas · HTML5">
-      <h3>HTML5 desde cero (Píldoras Informáticas)</h3>
-      <p>
-        Curso completo de HTML5 explicado paso a paso.
-        Muy recomendable para entender semántica, formularios
-        y estructura profesional de documentos HTML.
-      </p>
-      <a
-        href="https://www.pildorasinformaticas.es/course/html-5/"
-        target="_blank"
-      >
-        Ver curso
-      </a>
-    </article>
-
-    <!-- Píldoras Informáticas · CSS avanzado -->
-    <article class="card">
-      <img src="pildoras.png" alt="Píldoras Informáticas · CSS Avanzado">
-      <h3>CSS avanzado desde 0 (Píldoras Informáticas)</h3>
-      <p>
-        Curso orientado a profundizar en CSS: layouts avanzados,
-        posicionamiento, responsive design y buenas prácticas profesionales.
-      </p>
-      <a
-        href="https://www.pildorasinformaticas.es/course/css-avanzado-desde-0/"
-        target="_blank"
-      >
-        Ver curso
-      </a>
-    </article>
-
-
-  </div>
-</section>
-<!-- =========================
-     MANUALES PROPIOS · HTML & CSS
-========================== -->
-<section id="manuales">
-  <div class="section">
-    <h2>📘 Manuales propios · HTML & CSS</h2>
-
-    <p style="max-width: 900px; margin-bottom: 2rem;">
-      En esta sección se recogen los <strong>manuales creados y trabajados en clase</strong>
-      con el alumnado. Son materiales didácticos propios, estructurados paso a paso
-      y alineados con los contenidos del curso.
-    </p>
-
-    <div class="grid">
-
-      <!-- Manual HTML -->
-      <article class="card">
-        <span class="manual-badge">Manual del curso</span>
-
-        <h3>Manual HTML · UF1841</h3>
-
-        <p>
-          Manual completo de HTML.
-          Incluye estructura básica, etiquetas semánticas, formularios,
-          tablas, buenas prácticas y ejemplos claros para aprender desde cero.
-        </p>
-
-        <a
-          href="https://cursohtml1841.vercel.app/"
-          target="_blank"
-        >
-          Ver manual
-        </a>
-      </article>
-
-      <!-- Manual CSS / Bootstrap / Animaciones -->
-      <article class="card">
-        <span class="manual-badge">Manual del curso</span>
-
-        <h3>Manual CSS · Bootstrap y Animaciones</h3>
-
-        <p>
-          Manual práctico centrado en estilos CSS, uso de Bootstrap
-          y animaciones. Diseñado para aprender maquetación moderna,
-          responsive design y mejora visual de sitios web.
-        </p>
-
-        <a
-          href="https://vercel.com/ici2709s-projects/bootstrapyanimaciones"
-          target="_blank"
-        >
-          Ver manual
-        </a>
-      </article>
-
-     
-
-    </div>
-  </div>
-</section>
-
+      </div>
+    </section>
 
     <!-- =========================
          JAVASCRIPT
@@ -237,25 +185,20 @@
 
       <div class="grid">
 
-        <!-- PÍLDORAS (imagen local, enlace a su web) -->
-<article class="card">
-  <img src="pildoras.png" alt="Píldoras Informáticas · Canal YouTube">
-  <h3>JavaScript desde 0 (Píldoras Informáticas)</h3>
-  <p>Curso completo para repasar los fundamentos de JavaScript paso a paso.</p>
-  <a href="https://www.pildorasinformaticas.es/course/javascript-desde-0/" target="_blank">
-    Ver curso
-  </a>
-</article>
-
+        <article class="card">
+          <img src="pildoras.png" alt="Píldoras Informáticas · JavaScript">
+          <h3>JavaScript desde 0 (Píldoras Informáticas)</h3>
+          <p>Curso completo para repasar los fundamentos de JavaScript paso a paso.</p>
+          <a href="https://www.pildorasinformaticas.es/course/javascript-desde-0/" target="_blank" rel="noopener noreferrer">
+            Ver curso
+          </a>
+        </article>
 
         <article class="card">
           <img src="https://img.youtube.com/vi/BUmR1bUnUpQ/hqdefault.jpg" alt="Curso de JavaScript para principiantes desde cero">
-          <h3>Curso de JavaScript para principiantes (YouTube)</h3>
-          <p>
-            Introducción a JavaScript desde cero: sintaxis, variables, funciones y
-            conceptos básicos para empezar con programación web.
-          </p>
-          <a href="https://www.youtube.com/watch?v=BUmR1bUnUpQ" target="_blank">
+          <h3>JavaScript para principiantes (YouTube)</h3>
+          <p>Introducción desde cero: sintaxis, variables, funciones y conceptos básicos.</p>
+          <a href="https://www.youtube.com/watch?v=BUmR1bUnUpQ" target="_blank" rel="noopener noreferrer">
             Ver curso en YouTube
           </a>
         </article>
@@ -263,139 +206,89 @@
         <article class="card">
           <img src="https://img.youtube.com/vi/1glVfFxj8a4/hqdefault.jpg" alt="Repaso de JavaScript antes de aprender React">
           <h3>Repaso de JavaScript para React (YouTube)</h3>
-          <p>
-            Curso ideal para reforzar fundamentos clave antes de React:
-            variables, funciones, arrays, objetos y lógica básica.
-          </p>
-          <a href="https://www.youtube.com/watch?v=1glVfFxj8a4" target="_blank">
+          <p>Repaso clave: variables, funciones, arrays, objetos y lógica básica antes de React.</p>
+          <a href="https://www.youtube.com/watch?v=1glVfFxj8a4" target="_blank" rel="noopener noreferrer">
             Ver curso
           </a>
         </article>
+
         <article class="card">
-  <img
-    src="https://img.youtube.com/vi/hdI2bqOjy3c/hqdefault.jpg"
-    alt="Introducción a la programación con JavaScript (Udemy)"
-  >
-
-  <h3>JavaScript · Introducción a la programación (Udemy)  Grover Vásquez</h3>
-
-  <p>
-    Curso orientado a personas que empiezan desde cero en programación.
-    Ideal para comprender lógica básica, variables, estructuras de control
-    y sentar una buena base antes de profundizar en JavaScript moderno.
-  </p>
-
-  <a
-    href="https://www.udemy.com/course/javascript-introduccion-a-la-programacion/"
-    target="_blank"
-  >
-    Ver curso
-  </a>
-</article>
-
+          <img src="https://img.youtube.com/vi/hdI2bqOjy3c/hqdefault.jpg" alt="Introducción a la programación con JavaScript (Udemy)">
+          <h3>JavaScript · Introducción a la programación (Udemy) · Grover Vásquez</h3>
+          <p>
+            Para empezar desde cero: lógica, variables, estructuras de control y base sólida
+            antes de profundizar.
+          </p>
+          <a href="https://www.udemy.com/course/javascript-introduccion-a-la-programacion/" target="_blank" rel="noopener noreferrer">
+            Ver curso
+          </a>
+        </article>
 
         <article class="card">
           <img src="https://img.youtube.com/vi/ivdTnPl1ND0/hqdefault.jpg" alt="Repaso JavaScript para React (Udemy)">
           <h3>Repaso de JavaScript para React (Udemy)</h3>
           <p>Curso enfocado a reforzar JavaScript antes de empezar con React.</p>
-          <a href="https://www.udemy.com/course/repaso-de-javascript-para-comenzar-con-react/" target="_blank">
+          <a href="https://www.udemy.com/course/repaso-de-javascript-para-comenzar-con-react/" target="_blank" rel="noopener noreferrer">
             Ver curso
           </a>
         </article>
 
-       
       </div>
     </section>
+
     <!-- =========================
-     MANUALES PROPIOS · JAVASCRIPT
-========================== -->
-<section id="manuales-js">
-  <div class="section">
-    <h2>📗 Manuales propios · JavaScript</h2>
+         MANUALES PROPIOS · JAVASCRIPT
+    ========================== -->
+    <section id="manuales-js" class="section">
+      <h2>📗 Manuales propios · JavaScript</h2>
 
-    <p style="max-width: 900px; margin-bottom: 2rem;">
-      Aquí tienes los <strong>manuales y recursos propios</strong> trabajados con el alumnado
-      para afianzar JavaScript. Incluyen teoría clara, ejemplos guiados y propuestas
-      de ejercicios para practicar.
-    </p>
+      <p class="section-lead">
+        Manuales y recursos trabajados en clase: teoría clara, ejemplos guiados y práctica.
+      </p>
 
-    <div class="grid">
+      <div class="grid">
 
-      <!-- Manual JavaScript (Vercel) -->
-      <article class="card">
-        <span class="manual-badge">Manual del curso</span>
+        <article class="card">
+          <span class="manual-badge">Manual del curso</span>
+          <h3>Manual JavaScript · Curso</h3>
+          <p>
+            Variables, condicionales, bucles, funciones, arrays, objetos y práctica enfocada
+            a desarrollo web.
+          </p>
+          <a href="https://vercel.com/ici2709s-projects/javascript" target="_blank" rel="noopener noreferrer">
+            Ver manual
+          </a>
+        </article>
 
-        <h3>Manual JavaScript · Curso</h3>
+        <article class="card">
+          <span class="manual-badge">Guía del curso</span>
+          <h3>Guía de Nomenclatura y buenas prácticas</h3>
+          <p>
+            Convenciones para escribir código limpio: nombres, carpetas, archivos y estructura
+            profesional.
+          </p>
+          <a href="https://vercel.com/ici2709s-projects/nomenclatura" target="_blank" rel="noopener noreferrer">
+            Ver guía
+          </a>
+        </article>
 
-        <p>
-          Manual estructurado para aprender JavaScript desde la base:
-          variables, condicionales, bucles, funciones, arrays, objetos y práctica
-          enfocada a desarrollo web.
-        </p>
+        <article class="card">
+          <span class="manual-badge">Ejercicios</span>
+          <h3>Ejercicios · JS + HTML + CSS (API Giphy)</h3>
+          <p>
+            Mini-app con <strong>HTML, CSS y JavaScript</strong> consumiendo la <strong>API de Giphy</strong>.
+            Perfecta para practicar fetch, DOM, eventos y lógica real.
+          </p>
+          <a href="https://giphy-one-alpha.vercel.app/" target="_blank" rel="noopener noreferrer">
+            Ver ejercicios
+          </a>
+          <a class="btn-secondary" href="https://github.com/inma2709/giphy" target="_blank" rel="noopener noreferrer">
+            Ver repositorio Git
+          </a>
+        </article>
 
-        <a
-          href="https://vercel.com/ici2709s-projects/javascript"
-          target="_blank"
-        >
-          Ver manual
-        </a>
-      </article>
-
-      <!-- Nomenclatura / buenas prácticas -->
-      <article class="card">
-        <span class="manual-badge">Guía del curso</span>
-
-        <h3>Guía de Nomenclatura y buenas prácticas</h3>
-
-        <p>
-          Reglas y ejemplos para escribir código limpio: nombres de variables,
-          funciones, archivos, carpetas y convenciones que ayudan a mantener
-          proyectos ordenados y profesionales.
-        </p>
-
-        <a
-          href="https://vercel.com/ici2709s-projects/nomenclatura"
-          target="_blank"
-        >
-          Ver guía
-        </a>
-      </article>
-
-     <!-- Propuestas de ejercicios -->
-<article class="card">
-  <span class="manual-badge">Ejercicios</span>
-
-  <h3>Propuestas de ejercicios · JavaScript (API Giphy)</h3>
-
-  <p>
-    Colección de ejercicios prácticos desarrollados con
-    <strong>HTML, CSS y JavaScript</strong>, que consumen la
-    <strong>API pública de Giphy</strong>.
-    Ideales para practicar peticiones fetch, manejo del DOM,
-    eventos, lógica y estructura de una mini-aplicación real.
-  </p>
-
-  <a
-    href="https://giphy-one-alpha.vercel.app/"
-    target="_blank"
-  >
-    Ver ejercicios
-  </a>
-
-  <a
-    href="https://github.com/inma2709/giphy"
-    target="_blank"
-    style="margin-top: 0.5rem; background:#20232a; color:#fff;"
-  >
-    Ver repositorio Git
-  </a>
-</article>
-
-      
-    </div>
-  </div>
-</section>
-
+      </div>
+    </section>
 
     <!-- =========================
          REACT
@@ -405,11 +298,11 @@
 
       <div class="grid">
 
-        <!-- PÍLDORAS (imagen del canal, enlace a su web) -->
         <article class="card">
-          <img src="pildoras.png" alt="Píldoras Informáticas · Canal YouTube">
+          <img src="pildoras.png" alt="Píldoras Informáticas · React">
+          <h3>React desde cero (Píldoras Informáticas)</h3>
           <p>Curso de React explicado desde cero con ejemplos claros.</p>
-          <a href="https://www.pildorasinformaticas.es/course/react/" target="_blank">
+          <a href="https://www.pildorasinformaticas.es/course/react/" target="_blank" rel="noopener noreferrer">
             Ver curso
           </a>
         </article>
@@ -418,7 +311,7 @@
           <img src="https://img.youtube.com/vi/Ke90Tje7VS0/hqdefault.jpg" alt="React para principiantes (Udemy)">
           <h3>React para principiantes (Udemy)</h3>
           <p>Curso gratuito para empezar en React paso a paso.</p>
-          <a href="https://www.udemy.com/course/react-js-para-principiantes-desde-cero-curso-gratuito/" target="_blank">
+          <a href="https://www.udemy.com/course/react-js-para-principiantes-desde-cero-curso-gratuito/" target="_blank" rel="noopener noreferrer">
             Ver curso
           </a>
         </article>
@@ -426,8 +319,8 @@
         <article class="card">
           <img src="https://img.youtube.com/vi/7iobxzd_2wY/hqdefault.jpg" alt="Curso React desde cero en YouTube">
           <h3>Curso React desde cero (YouTube)</h3>
-          <p>Playlist de React desde cero con explicación clara y práctica con ejemplos.</p>
-          <a href="https://www.youtube.com/watch?v=7iobxzd_2wY&list=PLUofhDIg_38q4D0xNWp7FEHOTcZhjWJ29" target="_blank">
+          <p>Playlist de React con práctica y explicación clara de lo esencial.</p>
+          <a href="https://www.youtube.com/watch?v=7iobxzd_2wY&list=PLUofhDIg_38q4D0xNWp7FEHOTcZhjWJ29" target="_blank" rel="noopener noreferrer">
             Ver curso en YouTube
           </a>
         </article>
@@ -435,100 +328,50 @@
         <article class="card">
           <img src="https://img.youtube.com/vi/T_j60n1zgu0/hqdefault.jpg" alt="Curso de React desde cero en YouTube">
           <h3>Curso de React (playlist YouTube)</h3>
-          <p>
-            Curso completo en formato playlist: componentes, JSX, props, estado,
-            hooks y estructura de aplicaciones React.
-          </p>
-          <a href="https://www.youtube.com/watch?v=T_j60n1zgu0&list=PLV8x_i1fqBw0B008sQn79YxCjkHJU84pC" target="_blank">
+          <p>Componentes, JSX, props, estado, hooks y estructura de apps React.</p>
+          <a href="https://www.youtube.com/watch?v=T_j60n1zgu0&list=PLV8x_i1fqBw0B008sQn79YxCjkHJU84pC" target="_blank" rel="noopener noreferrer">
             Ver curso en YouTube
           </a>
         </article>
 
-        
+      </div>
+    </section>
+
+    <!-- =========================
+         MANUALES PROPIOS · REACT
+    ========================== -->
+    <section id="manuales-react" class="section">
+      <h2>⚛️ Manuales propios · React</h2>
+
+      <p class="section-lead">
+        Manuales y ejercicios trabajados en clase: conceptos fundamentales y práctica progresiva.
+      </p>
+
+      <div class="grid">
+
+        <article class="card">
+          <span class="manual-badge">Manual del curso</span>
+          <h3>Manual React · Desde cero</h3>
+          <p>Componentes, JSX, props, estado, hooks básicos y estructura de apps React.</p>
+          <a href="https://react-lac-beta-68.vercel.app/" target="_blank" rel="noopener noreferrer">
+            Ver manual
+          </a>
+        </article>
+
+        <article class="card">
+          <span class="manual-badge">Ejercicio práctico</span>
+          <h3>Ejercicio · Layout con Tailwind</h3>
+          <p>Ejercicio de maquetación y diseño usando Tailwind CSS aplicado a estructura de UI.</p>
+          <a href="https://senderos.vercel.app/" target="_blank" rel="noopener noreferrer">
+            Ver ejercicio
+          </a>
+          <a class="btn-secondary" href="https://github.com/inma2709/senderos" target="_blank" rel="noopener noreferrer">
+            Ver repositorio Git
+          </a>
+        </article>
 
       </div>
     </section>
-    <!-- =========================
-     MANUALES PROPIOS · REACT
-========================== -->
-<section id="manuales-react">
-  <div class="section">
-    <h2>⚛️ Manuales propios · React</h2>
-
-    <p style="max-width: 900px; margin-bottom: 2rem;">
-      Manuales y ejercicios prácticos de React trabajados con el alumnado.
-      Incluyen conceptos fundamentales, práctica guiada y proyectos
-      enfocados a aprender React de forma progresiva.
-    </p>
-
-    <div class="grid">
-
-      <!-- Manual React -->
-      <article class="card">
-        <span class="manual-badge">Manual del curso</span>
-
-        <h3>Manual React · Desde cero</h3>
-
-        <p>
-          Manual propio para aprender React desde cero: componentes, JSX,
-          props, estado, hooks básicos y estructura de aplicaciones React,
-          con ejemplos claros y enfoque didáctico.
-        </p>
-
-        <a
-          href="https://react-lac-beta-68.vercel.app/"
-          target="_blank"
-        >
-          Ver manual
-        </a>
-      </article>
-
-      <!-- Ejercicio Layout + Tailwind -->
-      <article class="card">
-        <span class="manual-badge">Ejercicio práctico</span>
-
-        <h3>Ejercicio · Layout con Tailwind</h3>
-
-        <p>
-          Ejercicio práctico centrado en maquetación y diseño usando
-          Tailwind CSS. Ideal para trabajar layout, estructura visual
-          y organización de componentes en React.
-        </p>
-
-        <a
-          href="https://senderos.vercel.app/"
-          target="_blank"
-        >
-          Ver ejercicio
-        </a>
-      </article>
-
-      <!-- Repositorio Git -->
-      <article class="card">
-        <span class="manual-badge">Repositorio Git</span>
-
-        <h3>Repositorio · Proyecto Senderos</h3>
-
-        <p>
-          Repositorio Git del proyecto trabajado en clase.
-          Útil para repasar estructura de proyecto React,
-          commits, historial y trabajo con GitHub.
-        </p>
-
-        <a
-          href="https://github.com/inma2709/senderos"
-          target="_blank"
-        >
-          Ver repositorio
-        </a>
-      </article>
-
-     
-
-    </div>
-  </div>
-</section>
-
 
     <!-- =========================
          GIT Y GITHUB
@@ -538,12 +381,11 @@
 
       <div class="grid">
 
-        <!-- PÍLDORAS (imagen del canal, enlace a su web) -->
         <article class="card">
-           <img src="pildoras.png" alt="Píldoras Informáticas · Canal YouTube">
+          <img src="pildoras.png" alt="Píldoras Informáticas · Git y GitHub">
           <h3>Git y GitHub (Píldoras Informáticas)</h3>
-          <p>Curso esencial para aprender control de versiones y trabajo colaborativo.</p>
-          <a href="https://www.pildorasinformaticas.es/course/curso-de-git-github/" target="_blank">
+          <p>Control de versiones y trabajo colaborativo explicado paso a paso.</p>
+          <a href="https://www.pildorasinformaticas.es/course/curso-de-git-github/" target="_blank" rel="noopener noreferrer">
             Ver curso
           </a>
         </article>
@@ -551,39 +393,26 @@
         <article class="card">
           <img src="https://img.youtube.com/vi/mCVQgSyjCkI/hqdefault.jpg" alt="Curso de Git y GitHub en YouTube">
           <h3>Curso de Git y GitHub (YouTube)</h3>
-          <p>
-            Playlist completa para aprender Git desde cero y dominar GitHub:
-            ramas, commits, push/pull y trabajo colaborativo.
-          </p>
-          <a href="https://www.youtube.com/watch?v=mCVQgSyjCkI&list=PLQxX2eiEaqby-qh4raiKfYyb4T7WyHsfW" target="_blank">
+          <p>Ramas, commits, push/pull y flujo colaborativo con GitHub.</p>
+          <a href="https://www.youtube.com/watch?v=mCVQgSyjCkI&list=PLQxX2eiEaqby-qh4raiKfYyb4T7WyHsfW" target="_blank" rel="noopener noreferrer">
             Ver curso en YouTube
           </a>
         </article>
 
-       
+        <article class="card">
+          <span class="manual-badge">Repositorio Git</span>
+          <h3>Git colaborativo · Práctica en equipo</h3>
+          <p>
+            Repo de clase para practicar ramas, merges, conflictos y flujo de trabajo colaborativo
+            como en un equipo real.
+          </p>
+          <a href="https://github.com/inma2709/gitcolaborativo" target="_blank" rel="noopener noreferrer">
+            Ver repositorio en GitHub
+          </a>
+        </article>
 
       </div>
     </section>
-<!-- Repositorio Git colaborativo -->
-<article class="card">
-  <span class="manual-badge">Repositorio Git</span>
-
-  <h3>Git colaborativo · Práctica en equipo</h3>
-
-  <p>
-    Repositorio creado como ejercicio práctico para aprender
-    <strong>Git y GitHub en equipo</strong>.
-    Incluye trabajo con ramas, commits, merges, resolución de conflictos
-    y flujo de trabajo colaborativo, simulando un entorno real de desarrollo.
-  </p>
-
-  <a
-    href="https://github.com/inma2709/gitcolaborativo"
-    target="_blank"
-  >
-    Ver repositorio en GitHub
-  </a>
-</article>
 
     <!-- =========================
          WORDPRESS
@@ -595,61 +424,52 @@
 
         <article class="card">
           <img src="https://img.youtube.com/vi/scUJZOs2MVs/hqdefault.jpg" alt="Tutorial WordPress desde cero en YouTube">
-          <h3>Tutorial WordPress desde cero (YouTube)</h3>
-          <p>
-            Playlist de YouTube con tutoriales paso a paso para aprender WordPress
-            desde cero: instalación, contenidos, temas y más.
-          </p>
-          <a href="https://www.youtube.com/watch?v=scUJZOs2MVs&list=PLiuy83ELDnxBUwRBUXHiBOQcTFvmhKuDc" target="_blank">
+          <h3>WordPress desde cero (YouTube)</h3>
+          <p>Playlist con pasos para instalación, contenidos, temas y base del panel.</p>
+          <a href="https://www.youtube.com/watch?v=scUJZOs2MVs&list=PLiuy83ELDnxBUwRBUXHiBOQcTFvmhKuDc" target="_blank" rel="noopener noreferrer">
             Ver curso en YouTube
           </a>
         </article>
 
         <article class="card">
           <img src="https://img.youtube.com/vi/bV0O-9ifQ-0/hqdefault.jpg" alt="Curso de WordPress desde cero en YouTube">
-          <h3>Curso de WordPress desde cero (YouTube)</h3>
-          <p>
-            Curso completo en formato playlist: instalación, panel de administración,
-            páginas, entradas y gestión básica del sitio.
-          </p>
-          <a href="https://www.youtube.com/watch?v=bV0O-9ifQ-0&list=PLq3Bmw3jHLMF7135b-LnVcnLbL5cXW3ZC" target="_blank">
+          <h3>Curso WordPress (playlist YouTube)</h3>
+          <p>Instalación, panel, páginas, entradas y gestión básica del sitio.</p>
+          <a href="https://www.youtube.com/watch?v=bV0O-9ifQ-0&list=PLq3Bmw3jHLMF7135b-LnVcnLbL5cXW3ZC" target="_blank" rel="noopener noreferrer">
             Ver curso en YouTube
           </a>
         </article>
 
         <article class="card">
           <img src="https://img.youtube.com/vi/vAyO9mQNzlU/hqdefault.jpg" alt="Curso de WordPress actualizado en YouTube">
-          <h3>Curso de WordPress actualizado (YouTube)</h3>
-          <p>
-            Curso con enfoque práctico y actualizado, ideal para aprender desde cero
-            la creación y gestión de sitios con WordPress.
-          </p>
-          <a href="https://www.youtube.com/watch?v=vAyO9mQNzlU" target="_blank">
+          <h3>Curso WordPress actualizado (YouTube)</h3>
+          <p>Enfoque práctico y actualizado para crear y gestionar webs con WordPress.</p>
+          <a href="https://www.youtube.com/watch?v=vAyO9mQNzlU" target="_blank" rel="noopener noreferrer">
             Ver curso en YouTube
           </a>
         </article>
-
-        
 
       </div>
     </section>
 
     <!-- =========================
-         DESARROLLO BACKEND
+         BACKEND
     ========================== -->
     <section id="backend" class="section">
-      <h2>🚀 Desarrollo Backend</h2>
+      <h2>🚀 Backend · Node, Express, BBDD y Despliegue</h2>
 
+      <p class="section-lead">
+        Ordenado por bloques: <strong>Cursos</strong>, <strong>Manuales</strong> y <strong>Repositorios/Proyectos</strong>.
+      </p>
+
+      <h3 class="section-subtitle">🎥 Cursos recomendados</h3>
       <div class="grid">
 
         <article class="card">
           <img src="https://img.youtube.com/vi/i3OdKwuBjeM/hqdefault.jpg" alt="Curso Node.js FaztCode">
-          <h3>Curso Node.js desde cero (FaztCode)</h3>
-          <p>
-            Curso completo de Node.js en español, actualizado para 2024.
-            Incluye fundamentos, npm, módulos y proyectos prácticos.
-          </p>
-          <a href="https://www.youtube.com/watch?v=i3OdKwuBjeM" target="_blank">
+          <h3>Node.js desde cero (FaztCode)</h3>
+          <p>Fundamentos, npm, módulos y proyectos prácticos.</p>
+          <a href="https://www.youtube.com/watch?v=i3OdKwuBjeM" target="_blank" rel="noopener noreferrer">
             Ver curso
           </a>
         </article>
@@ -657,11 +477,8 @@
         <article class="card">
           <img src="https://img.youtube.com/vi/JmJ1WUoUIK4/hqdefault.jpg" alt="Express.js desde cero">
           <h3>Express.js desde cero (YouTube)</h3>
-          <p>
-            Tutorial completo de Express.js para crear APIs REST.
-            Incluye rutas, middleware, autenticación y bases de datos.
-          </p>
-          <a href="https://www.youtube.com/watch?v=JmJ1WUoUIK4" target="_blank">
+          <p>Rutas, middleware y APIs REST con buenas prácticas.</p>
+          <a href="https://www.youtube.com/watch?v=JmJ1WUoUIK4" target="_blank" rel="noopener noreferrer">
             Ver curso
           </a>
         </article>
@@ -669,157 +486,111 @@
         <article class="card">
           <img src="https://img.youtube.com/vi/1hpc70_OoAg/hqdefault.jpg" alt="Node.js y Express Bluuweb">
           <h3>Node.js y Express (Bluuweb)</h3>
-          <p>
-            Curso actualizado de desarrollo backend con Node.js y Express.
-            Proyectos reales, buenas prácticas y deployment.
-          </p>
-          <a href="https://www.youtube.com/watch?v=1hpc70_OoAg" target="_blank">
+          <p>Curso práctico con proyectos, buenas prácticas y deployment.</p>
+          <a href="https://www.youtube.com/watch?v=1hpc70_OoAg" target="_blank" rel="noopener noreferrer">
             Ver curso
           </a>
         </article>
 
         <article class="card">
-         <img src="code.png" alt="Píldoras Informáticas · Canal YouTube">>
+          <img src="code.png" alt="Curso API REST con Node y Express">
           <h3>API REST con Node y Express (YouTube)</h3>
-          <p>
-            Aprende a crear APIs REST completas con Node.js, Express y MongoDB.
-            Proyecto paso a paso con autenticación JWT.
-          </p>
-          <a href="https://www.youtube.com/watch?v=BN56l7OTEKk" target="_blank">
+          <p>APIs REST con Node, Express y MongoDB. Proyecto guiado + JWT.</p>
+          <a href="https://www.youtube.com/watch?v=BN56l7OTEKk" target="_blank" rel="noopener noreferrer">
             Ver curso
           </a>
         </article>
 
         <article class="card">
-           <img src="code.png" alt="Píldoras Informáticas · Canal YouTube">
-          <h3>Node.js Full Course 2024 (HolaMundo)</h3>
-          <p>
-            Curso completo y actualizado de Node.js con proyectos modernos.
-            Incluye ES modules, async/await y las últimas características.
-          </p>
-          <a href="https://www.youtube.com/watch?v=ZYjqeHKsdpw" target="_blank">
+          <img src="code.png" alt="Curso Node.js Full Course HolaMundo">
+          <h3>Node.js Full Course (HolaMundo)</h3>
+          <p>Curso completo con enfoque moderno: async/await y estructura profesional.</p>
+          <a href="https://www.youtube.com/watch?v=ZYjqeHKsdpw" target="_blank" rel="noopener noreferrer">
             Ver curso
           </a>
         </article>
 
-      <article class="card">
-  <span class="manual-badge">Manual</span>
+      </div>
 
-  <h3>Manual de SQL · Bases de datos relacionales</h3>
+      <h3 class="section-subtitle">📚 Manuales (clase)</h3>
+      <div class="grid">
 
-  <p>
-    Manual completo para aprender <strong>SQL desde cero</strong>:
-    creación de bases de datos, tablas, relaciones, claves primarias,
-    consultas SELECT, filtros, joins y operaciones CRUD.
-  </p>
+        <article class="card">
+          <span class="manual-badge">Manual</span>
+          <h3>Manual de SQL · Bases de datos relacionales</h3>
+          <p>Tablas, relaciones, SELECT, filtros, joins y operaciones CRUD.</p>
+          <a href="https://sql-gules-seven.vercel.app/" target="_blank" rel="noopener noreferrer">
+            Ver manual SQL
+          </a>
+        </article>
 
-  <a href="https://sql-gules-seven.vercel.app/" target="_blank">
-    Ver manual SQL
-  </a>
-</article>
-<article class="card">
-  <span class="manual-badge">Manual</span>
+        <article class="card">
+          <span class="manual-badge">Manual</span>
+          <h3>Manual de MongoDB (Mongoo)</h3>
+          <p>NoSQL: colecciones, documentos, consultas y estructura de proyectos.</p>
+          <a href="https://mongoo-manual.vercel.app/" target="_blank" rel="noopener noreferrer">
+            Ver manual MongoDB
+          </a>
+        </article>
 
-  <h3>Manual de MongoDB (Mongoo)</h3>
+        <article class="card">
+          <span class="manual-badge">Manual</span>
+          <h3>Node.js y Express · Entorno servidor</h3>
+          <p>Servidor, rutas, APIs REST y organización de proyectos.</p>
+          <a href="https://entorno-servidor-71vh.vercel.app/" target="_blank" rel="noopener noreferrer">
+            Ver manual Node & Express
+          </a>
+        </article>
 
-  <p>
-    Manual práctico para aprender <strong>MongoDB</strong>:
-    bases de datos NoSQL, colecciones, documentos,
-    consultas básicas y estructura de proyectos con Mongo.
-  </p>
+        <article class="card">
+          <span class="manual-badge">Manual</span>
+          <h3>Manual de Despliegue de aplicaciones</h3>
+          <p>Publicación online: frontend, backend y configuración básica.</p>
+          <a href="https://despliegue-ten-pink.vercel.app/" target="_blank" rel="noopener noreferrer">
+            Ver manual de despliegue
+          </a>
+        </article>
 
-  <a href="https://mongoo-manual.vercel.app/" target="_blank">
-    Ver manual MongoDB
-  </a>
-</article>
-<article class="card">
-  <span class="manual-badge">Ejercicio</span>
+      </div>
 
-  <h3>Ejercicio MongoDB · CRUD completo</h3>
+      <h3 class="section-subtitle">🧩 Repositorios y proyectos</h3>
+      <div class="grid">
 
-  <p>
-    Ejercicio práctico con base de datos MongoDB donde se trabaja
-    el CRUD completo, estructura de datos y conexión con backend.
-  </p>
+        <article class="card">
+          <span class="manual-badge">Ejercicio</span>
+          <h3>Ejercicio MongoDB · CRUD completo</h3>
+          <p>CRUD completo con MongoDB orientado a práctica de backend.</p>
+          <a href="https://github.com/inma2709/ejercicioMongoo" target="_blank" rel="noopener noreferrer">
+            Ver repositorio
+          </a>
+        </article>
 
-  <a href="https://github.com/inma2709/ejercicioMongoo" target="_blank">
-    Ver repositorio
-  </a>
-</article>
-<article class="card">
-  <span class="manual-badge">Manual</span>
+        <article class="card">
+          <span class="manual-badge">Repositorio</span>
+          <h3>CRUD de canciones · JSON</h3>
+          <p>CRUD usando JSON como “base de datos” para entender lógica antes de SQL.</p>
+          <a href="https://github.com/inma2709/crudCanciones" target="_blank" rel="noopener noreferrer">
+            Ver repositorio
+          </a>
+        </article>
 
-  <h3>Manual de Despliegue de aplicaciones</h3>
+        <article class="card">
+          <span class="manual-badge">Repositorio</span>
+          <h3>Ejercicio Senderos · JSON</h3>
+          <p>Práctica con datos JSON: lectura, escritura y estructura de app.</p>
+          <a href="https://github.com/inma2709/ejercicioSenderos" target="_blank" rel="noopener noreferrer">
+            Ver repositorio
+          </a>
+        </article>
 
-  <p>
-    Guía práctica para aprender a desplegar proyectos web:
-    frontend, backend, configuración básica y publicación online.
-  </p>
-
-  <a href="https://despliegue-ten-pink.vercel.app/" target="_blank">
-    Ver manual de despliegue
-  </a>
-</article>
-<article class="card">
-  <span class="manual-badge">Manual</span>
-
-  <h3>Node.js y Express · Entorno servidor</h3>
-
-  <p>
-    Manual para aprender backend con <strong>Node.js y Express</strong>:
-    creación de servidores, rutas, APIs REST y estructura de proyectos.
-  </p>
-
-  <a href="https://entorno-servidor-71vh.vercel.app/" target="_blank">
-    Ver manual Node & Express
-  </a>
-</article>
-<article class="card">
-  <span class="manual-badge">Repositorio</span>
-
-  <h3>CRUD de canciones · JSON</h3>
-
-  <p>
-    Repositorio práctico donde se trabaja un CRUD completo utilizando
-    ficheros JSON como base de datos. Ideal para entender la lógica
-    antes de pasar a bases de datos reales.
-  </p>
-
-  <a href="https://github.com/inma2709/crudCanciones" target="_blank">
-    Ver repositorio
-  </a>
-</article>
-<article class="card">
-  <span class="manual-badge">Repositorio</span>
-
-  <h3>Ejercicio Senderos · JSON</h3>
-
-  <p>
-    Ejercicio práctico basado en datos JSON para trabajar estructura,
-    lectura, escritura y lógica de aplicación en frontend.
-  </p>
-
-  <a href="https://github.com/inma2709/ejercicioSenderos" target="_blank">
-    Ver repositorio
-  </a>
-</article>
-<article class="card">
-  <span class="manual-badge">Proyecto Full Stack</span>
-
-  <h3>Bazar completo · SQL + Backend + Frontend</h3>
-
-  <p>
-    Proyecto completo de aplicación web con:
-    <strong>base de datos SQL</strong>, backend,
-    frontend en HTML y frontend en React.
-    Ejemplo real de arquitectura full stack.
-  </p>
-
-  <a href="https://github.com/inma2709/bazarCompleto" target="_blank">
-    Ver repositorio
-  </a>
-</article>
-
+        <article class="card">
+          <span class="manual-badge">Proyecto Full Stack</span>
+          <h3>Bazar completo · SQL + Backend + Frontend</h3>
+          <p>Proyecto real: SQL + backend + frontend HTML y frontend React.</p>
+          <a href="https://github.com/inma2709/bazarCompleto" target="_blank" rel="noopener noreferrer">
+            Ver repositorio
+          </a>
+        </article>
 
       </div>
     </section>
@@ -834,48 +605,27 @@
 
         <article class="card">
           <img src="https://img.youtube.com/vi/1wZw7RvXPRU/hqdefault.jpg" alt="freeCodeCamp canal de YouTube">
-          <h3>freeCodeCamp.org (Canal YouTube)</h3>
-          <p>
-            Canal educativo de referencia con cursos completos de programación,
-            desarrollo web, JavaScript, React, backend y más.
-          </p>
-          <a href="https://www.youtube.com/@freecodecamp/videos" target="_blank">
+          <h3>freeCodeCamp.org</h3>
+          <p>Canal de referencia con cursos completos de programación y desarrollo web.</p>
+          <a href="https://www.youtube.com/@freecodecamp/videos" target="_blank" rel="noopener noreferrer">
             Ver canal
           </a>
         </article>
 
         <article class="card">
-          <img src="https://img.youtube.com/vi/T_j60n1zgu0/hqdefault.jpg" alt="Canal recomendado de React y desarrollo web">
-          <h3>Canal recomendado (React / Desarrollo Web)</h3>
-          <p>
-            Canal con playlists y cursos prácticos sobre React y desarrollo web moderno.
-            Ideal para seguir aprendiendo con contenido actual.
-          </p>
-          <a href="https://www.youtube.com/watch?v=T_j60n1zgu0&list=PLV8x_i1fqBw0B008sQn79YxCjkHJU84pC" target="_blank">
-            Ver contenido
-          </a>
-        </article>
-
-        <article class="card">
-          <img src="https://img.youtube.com/vi/IV0Cs5wlycY/hqdefault.jpg" alt="MoureDev - Cursos gratis de programación">
-          <h3>MoureDev – Cursos de programación</h3>
-          <p>
-            Plataforma y comunidad de Brais Moure con cursos gratuitos para aprender
-            JavaScript, Git, Bash, Python, SQL y más.
-          </p>
-          <a href="https://moure.dev/cursos" target="_blank">
+          <img src="https://img.youtube.com/vi/IV0Cs5wlycY/hqdefault.jpg" alt="MoureDev - Cursos">
+          <h3>MoureDev</h3>
+          <p>Cursos y comunidad: JavaScript, Git, Bash, Python, SQL y más.</p>
+          <a href="https://moure.dev/cursos" target="_blank" rel="noopener noreferrer">
             Ver cursos
           </a>
         </article>
 
         <article class="card">
-          <img src="midudev.png" alt="Midudev - Cursos gratis de programación">
-          <h3>Midudev – Cursos de programación</h3>
-          <p>
-            Plataforma y comunidad de Miguel Ángel Durán con cursos gratuitos para aprender
-            JavaScript, Git, React, Node.js y más.
-          </p>
-          <a href="https://midu.dev/" target="_blank">
+          <img src="midudev.png" alt="Midudev">
+          <h3>Midudev</h3>
+          <p>Cursos y recursos: JavaScript, React, Node.js y contenido práctico.</p>
+          <a href="https://midu.dev/" target="_blank" rel="noopener noreferrer">
             Ver cursos
           </a>
         </article>
@@ -891,18 +641,17 @@
         <h2>🎯 Conclusión · ¿Por qué estos recursos?</h2>
 
         <p>
-          Los enlaces de esta página no están elegidos al azar. Corresponden a
-          creadores y formadores que, en mi experiencia, explican la programación
-          de forma clara, honesta y orientada a la práctica real.
+          Los enlaces de esta página no están elegidos al azar: son creadores y formadores
+          que explican de forma clara, honesta y orientada a la práctica real.
         </p>
 
         <p>
-          Canales y plataformas como <strong>MoureDev</strong>, <strong>Kiko Palomares</strong>,
+          Canales y plataformas como <strong>MoureDev</strong>, <strong>Midudev</strong>,
           <strong>Píldoras Informáticas</strong>, <strong>TodoCode</strong> o
-          <strong>Midudev</strong>, entre otros, destacan por:
+          <strong>Kiko Palomares</strong> destacan por:
         </p>
 
-        <ul>
+        <ul class="checklist">
           <li>🔹 Explicaciones paso a paso, pensadas para principiantes.</li>
           <li>🔹 Buen equilibrio entre teoría y práctica.</li>
           <li>🔹 Contenido útil y aplicado al mundo real.</li>
@@ -910,14 +659,12 @@
         </ul>
 
         <p>
-          Aqui te he recopilado la mayoría de mis canales y cursos favoritos para
-          repasar JavaScript, React, Git y WordPress. ¡Espero que te sean útiles! Y recuerda a programar sólo se aprende programando.
+          Aquí tienes recopilados mis recursos favoritos para repasar. Y recuerda:
+          <strong>a programar se aprende programando</strong>.
         </p>
 
-       
-
         <p>
-          👉 Aprender a programar no va de memorizar, sino de <strong>entender, practicar y repetir</strong>.
+          👉 Aprender no va de memorizar, sino de <strong>entender, practicar y repetir</strong>.
         </p>
       </div>
     </section>
