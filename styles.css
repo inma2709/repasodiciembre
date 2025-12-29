@@ -187,4 +187,82 @@ body {
 .footer p {
   opacity: 0.85;
 }
+/* =========================
+   MANUALES PROPIOS
+========================= */
 
+/* Diferenciamos visualmente el bloque */
+#manuales {
+  background: #eef6fb;
+  padding: 3rem 1rem;
+  margin-top: 4rem;
+  border-top: 2px solid #61dafb;
+}
+
+/* Ajuste del contenedor interno */
+#manuales .section {
+  margin: 0 auto;
+}
+
+/* Tarjetas de manuales */
+#manuales .card {
+  border: 2px solid #61dafb;
+  background: #ffffff;
+}
+
+/* Título del manual */
+#manuales .card h3 {
+  color: #20232a;
+  font-size: 1.1rem;
+}
+
+/* Texto más didáctico */
+#manuales .card p {
+  font-size: 0.95rem;
+}
+
+/* Botón especial para manuales */
+#manuales .card a {
+  background: #20232a;
+  color: #ffffff;
+}
+
+#manuales .card a:hover {
+  background: #000000;
+}
+
+/* Etiqueta "Manual propio" */
+.manual-badge {
+  align-self: flex-start;
+  background: #61dafb;
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+#manuales-js {
+  background: #eef6fb;
+  padding: 3rem 1rem;
+  margin-top: 4rem;
+  border-top: 2px solid #61dafb;
+}
+
+#manuales-js .section {
+  margin: 0 auto;
+}
+
+#manuales-js .card {
+  border: 2px solid #61dafb;
+}
+
+#manuales-js .card a {
+  background: #20232a;
+  color: #fff;
+}
+
+#manuales-js .card a:hover {
+  background: #000;
+}
