@@ -1,4 +1,4 @@
-# 📚 Repaso Diciembre · JavaScript, React, Git y WordPress
+# 📚 Repaso Diciembre · JavaScript, React, Git, WordPress y Backend
 
 Este repositorio contiene una **página web estática** creada como **manual de repaso** con enlaces seleccionados a cursos gratuitos y de calidad sobre:
 
@@ -6,6 +6,7 @@ Este repositorio contiene una **página web estática** creada como **manual de 
 - ⚛️ React  
 - 🔧 Git y GitHub  
 - 📰 WordPress  
+- 🚀 Desarrollo Backend (Node.js y Express)  
 - 📺 Canales recomendados de desarrollo web  
 
 El objetivo es **reforzar conceptos clave**, comparar explicaciones de distintos formadores y consolidar una base sólida mediante práctica y repetición.
@@ -15,8 +16,9 @@ El objetivo es **reforzar conceptos clave**, comparar explicaciones de distintos
 ## 🎯 Objetivo del proyecto
 
 Este proyecto nace como material de apoyo para:
-- Repasar fundamentos de desarrollo web
-- Orientar el estudio de JavaScript antes de React
+- Repasar fundamentos de desarrollo web frontend y backend
+- Orientar el estudio de JavaScript antes de React y Node.js
+- Aprender desarrollo backend con Node.js y Express
 - Tener recursos fiables y actualizados en un solo lugar
 - Servir como ejemplo de **estructura HTML + CSS limpia y accesible**
 - Usarse como referencia educativa o para alumnado
